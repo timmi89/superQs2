@@ -1,18 +1,15 @@
   <li>{{question.author}} asks: {{question.content}}
       {{#if isNoteShowing}}
-        <p>{{question.note}} <button {{action 'noteHide'}}>hide notes</button></p>
+        <p>{{question.note}} <button {{action 'noteHide'}}>hide note</button></p>
       {{else}}
         <button {{action 'noteShow'}}>show note</button>
       {{/if}}
+
+      {{update-question question=question update="update"}}
+
+      <button {{action 'delete' question}}>delete question</button>
   </li>
 
 
-  <!-- <li>question:{{question.content}} <br> asks:{{question.author}}
-      {{#if isNoteShowing}}
-        <p>{{question.note}} <button class="hide_notes"{{action 'noteHide'}}>hide</button></p>
-      {{else}}
-        <button class="notes_button"{{action 'noteShow'}}>notes</button>
-      {{/if}}
-      {{update-question question=question update="update"}}
-        <button {{action 'delete' question}}>Delete</button>
-  </li> -->
+<!-- parent=index -->
+<!-- children = update-question -->
