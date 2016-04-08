@@ -1,0 +1,16 @@
+{ "questions" : [{
+    "content": "what is the meaning of life?",
+    "author": "existential jon",
+    "note": "just asking for nietsche"
+  }, {
+
+    "content": "does this smell like ether?",
+    "author": "creepy carol",
+    "note": "just asking for a friend"
+  }, {
+
+    "content": "can i eat this thing?",
+    "author": "hungry pete",
+    "note": "totally asking for myself"
+  }]
+}
