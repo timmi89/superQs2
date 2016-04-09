@@ -1,10 +1,10 @@
-<h1 class="opener">welcome to questionable</h1>
-<h3 class="opener">the internet's home for questionable queries and answers</h3>
 
 <ul>
   {{#each model as |question|}}
-    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+    {{question-tile question=question}}
   {{/each}}
 </ul>
 
 {{new-question save2="save3"}}
+
+<!-- update="update" destroyQuestion="destroyQuestion"}} -->

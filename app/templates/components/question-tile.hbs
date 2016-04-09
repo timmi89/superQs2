@@ -1,4 +1,4 @@
-  <li>{{question.author}} asks: {{question.content}}
+  <li>{{#link-to 'question' question.id}} {{question.author}} asks: {{question.content}} {{/link-to}}
       {{#if isNoteShowing}}
         <p>{{question.note}} <button {{action 'noteHide'}}>hide note</button></p>
       {{else}}
@@ -7,7 +7,7 @@
 
       {{update-question question=question update="update"}}
 
-      <button {{action 'delete' question}}>delete question</button>
+      <!-- <button {{action 'delete' question}}>delete question</button> -->
   </li>
 
 

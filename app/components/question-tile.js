@@ -10,13 +10,13 @@ export default Ember.Component.extend({
     noteHide: function(){
       this.set('isNoteShowing', false);
     },
+    // delete(question){
+    //   if(confirm('do you really want to give up on your quest for knowledge?')){
+    //     this.sendAction('destroyQuestion', question);
+    //   }
+    // },
     update(question, params) {
       this.sendAction('update', question, params);
-    },
-    delete(question){
-      if(confirm('do you really want to give up on your quest for knowledge?')){
-        this.sendAction('destroyQuestion', question);
-      }
     }
   }
 });
