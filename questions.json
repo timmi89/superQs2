@@ -12,5 +12,12 @@
     "content": "can i eat this thing?",
     "author": "hungry pete",
     "note": "totally asking for myself"
-  }]
+  }],
+  "answers": [{
+    "content": "42",
+    "author": "paul"
+  }, {
+    "content": "kindaaaa...thud",
+    "author": "sleepy pete"  
+    }]
 }

@@ -1,6 +1,26 @@
 
-<h3>question:{{question.content}}</h3>
+<h3>question: {{question.content}}</h3>
 <p>
   notes: {{question.note}}
 </p>
   <button {{action 'delete' question}}>delete question</button>
+
+    
+     <ul>
+       {{#each model.answers as |answer|}}
+       <li>{{answer.answerAuthor}}</li>
+
+       <li>{{answer.answerContent}}</li>
+
+       {{/each}}
+     </ul>
+     <ul>
+   {{#each answers as |answer|}}
+   <li>{{#link-to 'answer' answer.id}}{{answer.answerContent}}{{/link-to}}</li>
+   {{/each}}
+ </ul>
+
+  <hr>
+
+    <h5>{{answer.answerAuthor}}</h5>
+    <p>{{answer.answerContent}}</p>

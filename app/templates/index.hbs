@@ -1,8 +1,15 @@
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question}}
   {{/each}}
 </ul>
 
 {{new-question save2="save3"}}
+
+<h3>answers</h3>
+<ul>
+  {{#each model.answers as |answer|}}
+  <li>{{answer.answerAuthor}} says:{{answer.answerContent}}</li>
+  {{/each}}
+</ul>

@@ -1,7 +1,8 @@
 # Super-qs2
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+
+This app creates a question and answer forum where users can ask questions and provide answers.
 
 ## Prerequisites
 
@@ -41,7 +42,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+In addition to the above requirements you will need to install bootstrap and sass for ember (ember install -bootstrap) and (ember install ember-cli-sass).
 
 ## Further Reading / Useful Links
 
@@ -50,4 +51,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
